@@ -4,7 +4,7 @@
 <ul>
 <book-item v-for="book in books" :book='book'></book-item>
 </ul>
-<book-form>@addBook='appendBook'</book-form>
+<book-form @addBook='appendBook'></book-form>
 </div>
 </template>
 
@@ -17,12 +17,7 @@ components : {
 	BookItem,
 	BookForm
 },
-methods:
-{
-	appendBook(bookTitle,bookAuthor){
-	this.books.push({ title: bookTitle, author: bookAuthor })
-	}
-}
+
 name: 'BookList',
 data(){
 return{
@@ -32,6 +27,12 @@ books:[
     {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
 ]
 }
+},
+methods:
+{
+	appendBook(bookTitle,bookAuthor){
+	this.books.push({ title: bookTitle, author: bookAuthor })
+	}
 }
 }
 </script>
