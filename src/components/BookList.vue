@@ -9,13 +9,14 @@
 export default{
 name: 'BookList',
 data(){
-return 
+return {
 title : 'All Books'
+}
 }
 }
 </script>
 
 
 <style>
-H1,H2 {font-weight:normal}
+h1,h2 {font-weight:normal}
 </style>
