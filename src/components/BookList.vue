@@ -9,10 +9,11 @@
 
 
 <script>
-import BookItem from './components/BookItem'; 
+import BookItem from './BookItem'; 
+
 export default{
 component : { 
-BookItem,
+BookItem
 },
 name: 'BookList',
 data(){
